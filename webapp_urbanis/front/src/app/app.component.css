@@ -1,0 +1,113 @@
+.header {
+  width: 100%;
+  height: 90px;
+  background: lightblue;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  overflow-y: hidden;
+}
+
+
+.container {
+  display: grid;
+  background: #fcfcfc;
+  grid-template-columns: 7fr 4fr;
+}
+
+.container .list {
+  padding: 10px;
+}
+
+.map {
+  position: sticky;
+  height: 85vh;
+  top: 110px;
+  left: 0;
+  margin: 20px;
+}
+
+.search-c1 {
+  width: 96%;
+  padding: 2%;
+}
+
+.search-c2 {
+  width: 96%;
+  padding: 2%;
+  height: 96%;
+
+  display: inline-block;
+  white-space: nowrap;
+  overflow: auto;
+
+}
+
+.mat-select {
+  opacity: 0;
+  position: absolute;
+}
+
+.list-mat-card {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.mat-toolbar {
+  background: #fcfcfc;
+  color: lightblue;
+}
+
+.button-row {
+  margin-top: 5px;
+}
+.button-row a {
+  line-height: 1.2;
+  background: #efefef;
+  border-radius: 8px;
+}
+
+.button-expend {
+  text-align: right;
+  margin-top: 5px;
+}
+
+
+:host ::ng-deep .list-squeeze ul {
+  display: none;
+}
+
+:host ::ng-deep .list-squeeze .txt {
+  height: 50px;
+  overflow: hidden;
+}
+
+:host ::ng-deep .list-expended ul {
+  display: block;
+}
+
+:host ::ng-deep .list-expended .txt {
+}
+
+
+
+:host ::ng-deep .search-c2 .mat-form-field-wrapper {
+  white-space: nowrap;
+  display: inline-block;
+  width: 100%
+}
+
+:host ::ng-deep .search-c2 .mat-form-field-flex {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+:host ::ng-deep .search-c2 .mat-chip-list-wrapper {
+  /*width: 100%;*/
+  Display: inline-block;
+}
+
+

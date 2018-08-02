@@ -1,0 +1,196 @@
+id_variable,nom
+101,terrain
+102,type de terrain
+103,superficie du terrain
+104,voies d'acces au terrain
+105,nombre de voies d'acces au terrain
+106,voie d'acces au terrain
+107,emprise de la voie d'acces au terrain
+108,la voie d'acces au terrain est en en impasse
+109,nombre de logements desservis
+110,acces au terrain
+111,acces au terrain sous porche
+112,hauteur libre sous porche
+113,accessible par voie carossable
+114,accessible par servitude passage
+115,localisation
+116,distance desserte transport en commun
+117,amenagement terrain
+118,mur soutenement sur rue
+119,cloture
+120,hauteur cloture
+121,cloture sur rue
+122,cloture sur autre limite separative
+123,hauteur mur bahut
+124,portail
+125,hauteur portail
+126,portillon
+127,hauteur portillon
+128,pillier
+129,hauteur pillier
+130,destination construction
+131,indispensable construction utilisation
+132,necessite autorisation
+133,caracteristique bati
+134,nombre etage
+135,surface plancher
+136,emprise au sol
+137,hauteur rez chausee
+138,hauteur construction
+139,hauteur construction plus haut
+140,hauteur construction egout
+141,hauteur construction max vis a vis
+142,surface plancher construite
+143,construction existante regulierement edifiee
+144,est annexe
+145,ancienne destination
+146,nouvelle destination
+147,date construction
+148,capacite
+149,capacite logement
+150,nombre logement
+151,nombre logement 1 piece
+152,nombre logement 2 piece
+153,nombre logement 3 piece
+154,nombre logement 4 piece
+155,nombre logement 5 piece
+156,nombre logement cree
+157,nombre logement cree
+158,taux logement locatifs sociaux
+159,nombre personnes recues
+160,nombre chambre
+161,nombre employe bureau
+162,nombre eleve
+163,acces batiment
+164,acces batiment dans marge retrait
+165,raccordement reseaux
+166,raccordement reseau eau potable
+167,raccordement reseau assainissement
+168,debit rejet reseau assainissement
+169,rejet infiltration pretraite
+170,raccordement reseau electricite
+171,raccordement reseau electricite methode
+172,implantation 6
+173,implantation alignement 6
+174,implantation retrait 6
+175,distance axe voie
+176,distance alignement
+177,voies emprises publiques
+178,nombre voies publiques
+179,nombre emprises publiques
+180,voie publique
+181,largeur voie publique
+182,element architectural
+183,saillie
+184,saillie alignement 6
+185,largeur voie publique pour saillie alignement 6
+186,taille saillie alignement 6
+187,hauteur saillie alignement 6
+188,saillie marge retrait 6
+189,taille saillie marge retrait 6
+190,hauteur saillie marge retrait 6
+191,isolation dans marge retrait 6
+192,isolation en saillie alignement 6
+193,implantation 7
+194,implantation sur limite 7
+195,implantation retrait 7
+196,implantation retrait 7 sans vue
+197,implantation retrait 7 avec vue
+198,distance limite 7
+199,isolation dans marge retrait 7
+200,type piscine
+201,piscine est couverte
+202,autorisation necessaire piscine
+203,piscine necessite permis construire
+204,piscine necessite autorisation ABF
+205,piscine necessite declaration prealable
+206,dimension piscine
+207,surface piscine
+208,longueur piscine 1
+209,largeur piscine 1
+210,distance limite 6
+211,distance limite 7
+212,plusieurs construction meme propriete
+213,distance construction meme propriete avec vue
+214,distance construction meme propriete sans vue
+215,toiture
+216,toiture plate
+217,toiture a pente
+218,type toiture
+219,gabarit toit
+220,hauteur point accroche
+221,hauteur principale
+222,hauteur secondaire
+223,hauteur tertiaire
+224,angle principal
+225,angle secondaire
+226,angle tertiaire
+227,profondeur principale
+228,profondeur secondaire
+229,profondeur tertiaire
+230,voisinage
+231,heberge voisine plus haute
+232,installation technique
+233,installation technique en terrasse
+234,hauteur installations techniques en terrasse
+235,retrait installations techniques en terrasse
+236,cheminee
+237,toiture vegetalisee
+238,systeme production energie renouvelable
+239,panneau solaire
+240,descente eaux pluviales
+241,edicule gaine technique
+242,conduit cheminee
+243,devoiement conduit cheminee
+244,antenne
+245,volet roulant
+246,caisson volet roulant interieur
+247,rampe parking
+248,facade
+249,nombre baies facade
+250,au moins une facade sur rue
+251,facade sur rue
+252,nombre baies facade sur rue
+253,commerce sur plusieurs immeubles contigus
+254,caracteristiques stationnement 
+255,places stationnement
+256,nombre place stationnement
+257,nombre place stationnement livraison
+258,proportion places stationnement dans construction
+259,place stationnement commandee
+260,nombre place stationnement construite
+261,nombre place stationnement detruite
+262,espace velo
+263,superficie espace velo
+264,espace velo unifie
+265,nombre place stationnement velo
+266,aire stationnement
+267,nombre emplacement
+268,aire materialisee au sol
+269,emplacement stationnement
+270,longueur emplacement stationnement
+271,largeur emplacement stationnement
+272,longueur degagement emplacement stationnement
+273,rampe acces sous sol
+274,pente rampe acces m1
+275,pente rampe acces m2
+276,pente rampe acces m5
+277,pente rampe acces m10
+278,type rampe acces
+279,nombre places desservies rampe acces
+280,largeur rampe acces
+281,rayon interieur rampe acces
+282,rayon exterieur rampe acces
+283,espaces vert
+284,proportion espace vert amenage
+285,espace vegetalise sur dalle
+286,epaisseur terre vegetale espace vert
+287,surface espace libre
+288,arbres
+289,nombre arbre
+290,hauteur arbres a implantation
+291,distance construction arbre
+292,connexion reseau internet
+293,connexion reseau haut debit
+294,connexion reseau adsl
+295,connexion reseau fibre

@@ -1,0 +1,87 @@
+<div class="header">
+    <mat-form-field class="search-c1" appearance="outline">
+      <mat-label>Recherche</mat-label>
+      <input (input)="onSujetChange($event.target.value)" placeholder="Recherche" matInput [formControl]="myControlSujets" [matAutocomplete]="auto1">
+      <mat-autocomplete #auto1="matAutocomplete" [displayWith]="displayFn" (optionSelected)="sujetSelected($event)">
+        <mat-option *ngFor="let option of filteredOptionsSujets | async" [value]="option">
+          {{option.nom}}
+        </mat-option>
+      </mat-autocomplete>
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+  <mat-form-field class="search-c2" appearance="legacy">
+    <mat-chip-list class="inline-chip-list" #chipList>
+      <mat-chip
+        *ngFor="let variable of variablesSelected"
+        [selectable]="selectable"
+        [removable]="removable"
+        (removed)="remove(variable)">
+        <b *ngIf="variable.option;">
+          ({{regles[variable.option - 1].nom}})&nbsp;
+        </b>
+        {{variable.nom}}
+        <mat-select (selectionChange)="onRegleSelected($event.value, variable)">
+          <mat-option disabled>Rechercher les règles qui: </mat-option>
+          <mat-option *ngFor="let regle of regles" [value]="regle">
+            {{regle.nom}}
+          </mat-option>
+        </mat-select>
+        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+      </mat-chip>
+      <input
+        placeholder="Contrainte"
+        #variableInput
+        [formControl]="myControlVariables"
+        [matAutocomplete]="auto"
+        [matChipInputFor]="chipList"
+        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+        [matChipInputAddOnBlur]="addOnBlur"
+        (matChipInputTokenEnd)="add($event)">
+    </mat-chip-list>
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selectedVariable($event)">
+      <mat-option *ngFor="let variable of filteredOptionsVariables | async" [value]="variable">
+        {{variable.nom}}
+      </mat-option>
+    </mat-autocomplete>
+
+  </mat-form-field>
+
+
+</div>
+<div class="container">
+  <div class="list-container">
+    <div class="header-list">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <mat-icon>cloud_done</mat-icon>&nbsp;&nbsp;
+          <span *ngIf="numberResultatFound > 0; else nothingFound">
+            {{numberResultatFound}} Résultats trouvés.
+          </span>
+          <ng-template #nothingFound>
+            <span>Aucun Résultat trouvé</span>
+          </ng-template>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </div>
+    <div class="list">
+      <mat-card class="list-mat-card" *ngFor="let text of texts; let i = index" [ngClass]="text.clicked ? 'list-expended' : 'list-squeeze'">
+        <div [innerHTML]="text.txt"></div>
+        <div class="button-row" *ngIf="text.clicked && text.description_loi">
+          <a [href]="text.lien" target="_blank" mat-stroked-button [innerHTML]="text.description_loi"></a>
+        </div>
+        <div class="button-expend">
+          <button mat-raised-button color="primary" (click)="onClickMe(i)" >{{
+            text.clicked ? 'Voir moins' : 'Voir plus'
+            }}</button>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="map" id="map">
+    <app-maps></app-maps>
+  </div>
+</div>
+
+

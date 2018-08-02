@@ -1,0 +1,38 @@
+id_sujet,nom
+1,construction
+2,travaux sur existant
+3,utilisation brute des sols
+4,logement
+5,bureau
+6,commerce
+7,artisanat
+8,hebergement hotelier
+9,industrie
+10,entrepot
+11,construction agricole
+12,construction ou installation necessaire aux services publics
+13,ecole
+14,agrandissement
+15,amenagement
+16,isolation
+17,exploitation de carriere
+18,depot
+19,entreprise de cassage de voiture
+20,exhaussement ou affouillement des sols
+21,terrain de camping ou de caravaning
+22,piscine
+23,logement social
+24,maison individuelle
+25,hangar
+26,chai
+27,construction ou installation necessaire à la SNCF
+28,construction ou installation necessaire au Grand Paris
+29,extension
+30,surelevation
+31,rehabilitation
+32,isolation par l'extérieur
+33,depot de ferailles
+34,depot de materiaux
+35,depot de vehicules
+36,depot de combustibles
+37,depot de dechets

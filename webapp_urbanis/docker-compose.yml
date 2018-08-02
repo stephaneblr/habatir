@@ -1,0 +1,26 @@
+# docker-compose.yml
+version: '2'
+
+services:
+    db:
+      image: webdb
+      ports:
+        - 3306:3306
+      volumes:
+        - "./db/data/:/var/lib/mysql"
+      environment:
+        MYSQL_ROOT_PASSWORD: password
+    back:
+        image: webback
+        ports:
+          - 5000:5000
+        depends_on:
+          - db
+        links:
+          - db:db
+    front:
+        image: webfront
+        ports:
+          - 4200:4200
+        depends_on:
+          - back

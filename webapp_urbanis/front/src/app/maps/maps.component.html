@@ -1,0 +1,35 @@
+<div class="container-right">
+  <div>
+    <div class="mapbox" id="mapbox">
+      <div class='map-overlay' id='legend'>
+        <div *ngFor="let layer of legend.layers; let i = index">
+          <div>
+            <span *ngIf="loaded" class="legend-key" [ngStyle]="{'background': legend.colors[i]}"></span>
+            <span class="legend-text" *ngIf="loaded"><b>{{layer}}</b></span>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  <div class="list-info-map">
+    <div class="container-list">
+      <mat-list role="list">
+        <mat-list-item>du_type: {{infoMaps.du_type}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>libelle: {{infoMaps.libelle}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>datvalid: {{infoMaps.datvalid}}</mat-list-item>
+      </mat-list>
+    </div>
+    <div class="container-list">
+      <mat-list role="list">
+        <mat-list-item>adresse: {{infoMaps.adresse}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>numero_parcelle: {{infoMaps.numero_parcelle}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>superficie: {{infoMaps.superficie}}</mat-list-item>
+      </mat-list>
+    </div>
+  </div>
+</div>
+
