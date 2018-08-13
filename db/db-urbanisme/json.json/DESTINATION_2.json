@@ -1,0 +1,69 @@
+{
+    "type": "table",
+    "name": "DESTINATION_2",
+    "database": "aloadecotp47",
+    "data": 
+[
+{
+    "id-destination": "1",
+    "id-parent-destination": "0",
+    "nom-destination": "habitation\r"
+},
+{
+    "id-destination": "2",
+    "id-parent-destination": "0",
+    "nom-destination": "hebergement_hotelier\r"
+},
+{
+    "id-destination": "3",
+    "id-parent-destination": "0",
+    "nom-destination": "bureau\r"
+},
+{
+    "id-destination": "4",
+    "id-parent-destination": "0",
+    "nom-destination": "commerce\r"
+},
+{
+    "id-destination": "5",
+    "id-parent-destination": "0",
+    "nom-destination": "artisanat\r"
+},
+{
+    "id-destination": "6",
+    "id-parent-destination": "0",
+    "nom-destination": "industrie\r"
+},
+{
+    "id-destination": "7",
+    "id-parent-destination": "0",
+    "nom-destination": "exploitation_agricole_forestiere\r"
+},
+{
+    "id-destination": "8",
+    "id-parent-destination": "0",
+    "nom-destination": "entrepot\r"
+},
+{
+    "id-destination": "9",
+    "id-parent-destination": "0",
+    "nom-destination": "cinaspic\r"
+},
+{
+    "id-destination": "10",
+    "id-parent-destination": "9",
+    "nom-destination": "ecole\r"
+},
+{
+    "id-destination": "11",
+    "id-parent-destination": "9",
+    "nom-destination": "cinaspic_sncf\r"
+},
+{
+    "id-destination": "12",
+    "id-parent-destination": "9",
+    "nom-destination": "cinaspic_grand_paris"
+}
+]
+
+}

@@ -16,8 +16,15 @@ import json
 
 
 # Data to serve with our API before connecting SQL DB
-with open("json/variable.json","r") as fp:
-    VARIABLE = json.load(fp)
+with open("/Users/stephaneblondellarougery/Desktop/Urbanis/db/db-urbanisme/json.json/VARIABLE.json","r") as fp:
+    TEMP_VARIABLE = json.load(fp)
+
+VARIABLE ={}
+
+for item in TEMP_VARIABLE["data"]:
+    key = str(item["id-variable"])
+    VARIABLE[key]=item
+    
     
 
 def read_all():

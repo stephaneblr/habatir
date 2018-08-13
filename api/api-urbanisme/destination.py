@@ -12,11 +12,19 @@ from flask import (
 )
 
 import json
+    
+# Get JSON data 
 
+with open("/Users/stephaneblondellarougery/Desktop/Urbanis/db/db-urbanisme/json.json/DESTINATION_2.json","r") as fp:
+    TEMP_DESTINATION = json.load(fp)
 
-# Data to serve with our API before connecting SQL DB
-with open("json/destination.json","r") as fp:
-    DESTINATION = json.load(fp)
+DESTINATION ={}
+
+for item in TEMP_DESTINATION["data"]:
+    key = str(item["id-destination"])
+    DESTINATION[key]=item
+ 
+    
     
 
 def read_all():

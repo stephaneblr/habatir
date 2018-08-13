@@ -14,9 +14,18 @@ from flask import (
 import json
 
 
-# Data to serve with our API before connecting SQL DB
-with open("json/loi.json","r") as fp:
-    LOI = json.load(fp)
+# Get JSON data 
+
+with open("/Users/stephaneblondellarougery/Desktop/Urbanis/db/db-urbanisme/json.json/LOI.json","r") as fp:
+    TEMP_LOI = json.load(fp)
+
+LOI ={}
+
+for item in TEMP_LOI["data"]:
+    key = str(item["id-loi"])
+    LOI[key]=item
+    
+    
     
 
 def read_all():

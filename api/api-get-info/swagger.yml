@@ -1,0 +1,342 @@
+swagger: "2.0"
+info:
+  description: Click on ressources to expand
+  version: "1.0.0"
+  title: API Urbanisme | Documentation
+consumes:
+  - application/json
+produces:
+  - application/json
+
+basePath: /api
+
+# Paths supported by the server application
+paths:
+  /variables:
+    get:
+      operationId: variable.read_all
+      tags:
+        - Variables
+      summary: Read the entire list of variables
+      description: Read the list of variables
+      parameters:
+        - name: length
+          in: query
+          type: integer
+          description: Number of variable to get
+          required: false
+        - name: offset
+          in: query
+          type: integer
+          description: Offset from beginning of list where to start gathering variables
+          required: false
+      responses:
+        200:
+          description: Successfully read variable list operation
+          schema:
+            type: array
+            items:
+              properties:
+                id_variable:
+                  type: integer
+                id_parent:
+                  type: integer
+                id_sujet:
+                  type: integer
+                id_destination:
+                  type: integer
+                nom:
+                  type: string
+                type:
+                  type: string
+                  
+  /variables/{id_variable}:
+    get:
+      operationId: variable.read_one
+      tags:
+        - Variables
+      summary: Read one variable from the variable list
+      description: Read one variable from the variable list
+      parameters:
+        - name: id_variable
+          in: path
+          description: Variable id
+          type: integer
+          required: true
+      responses:
+        200:
+          description: Successfully read variable from variable list operation
+          schema:
+            type: array
+            items:
+              properties:
+                id_variable:
+                  type: integer
+                id_parent:
+                  type: integer
+                id_sujet:
+                  type: integer
+                id_destination:
+                  type: integer
+                nom:
+                  type: string
+                type:
+                  type: string
+
+  /sujets:
+    get:
+      operationId: sujet.read_all
+      tags:
+        - Sujets
+      summary: Read the entire list of sujets
+      description: Read the list of sujets
+      parameters:
+        - name: length
+          in: query
+          type: integer
+          description: Number of sujets to get
+          required: false
+        - name: offset
+          in: query
+          type: integer
+          description: Offset from beginning of list where to start gathering sujets
+          required: false
+      responses:
+        200:
+          description: Successfully read sujets list operation
+          schema:
+            type: array
+            items:
+              properties:
+                id_sujet:
+                  type: integer
+                id_parent:
+                  type: integer
+                nom:
+                  type: string
+                  
+  /sujets/{id_sujet}:
+    get:
+      operationId: sujet.read_one
+      tags:
+        - Sujets
+      summary: Read one sujets from the sujets list
+      description: Read one sujets from the sujets list
+      parameters:
+        - name: id_sujet
+          in: path
+          description: Sujet id
+          type: integer
+          required: true
+      responses:
+        200:
+          description: Successfully read sujet from sujets list operation
+          schema:
+            type: array
+            items:
+              properties:
+                id_sujet:
+                  type: integer
+                id_parent:
+                  type: integer
+                nom:
+                  type: string
+                  
+#TODO
+  /destinations:
+    get:
+      operationId: destination.read_all
+      tags:
+        - Destinations
+      summary: Read the entire list of destinations
+      description: Read the list of destinations
+      parameters:
+        - name: length
+          in: query
+          type: integer
+          description: Number of destinations to get
+          required: false
+        - name: offset
+          in: query
+          type: integer
+          description: Offset from beginning of list where to start gathering destinations
+          required: false
+      responses:
+        200:
+          description: Successfully read destinations list operation
+          schema:
+            type: array
+            items:
+              properties:
+                id_destination:
+                  type: integer
+                id_parent:
+                  type: integer
+                nom:
+                  type: string               
+                  
+  /destinations/{id_destination}:
+    get:
+      operationId: destination.read_one
+      tags:
+        - Destinations
+      summary: Read one destination from the destination list
+      description: Read one destination from the destination list
+      parameters:
+        - name: id_destination
+          in: path
+          description: id_destination
+          type: integer
+          required: true
+      responses:
+        200:
+          description: Successfully read destination from destination list operation
+          schema:
+            type: array
+            items:
+              properties:
+                id_destination:
+                  type: integer
+                id_parent:
+                  type: integer
+                nom:
+                  type: string
+                
+                  
+#TODO               
+  /lois:
+    get:
+      operationId: loi.read_all
+      tags:
+        - Lois
+      summary: Read the entire list of lois
+      description: Read the list of lois
+      parameters:
+        - name: length
+          in: query
+          type: integer
+          description: Number of lois to get
+          required: false
+        - name: offset
+          in: query
+          type: integer
+          description: Offset from beginning of list where to start gathering lois
+          required: false
+      responses:
+        200:
+          description: Successfully read lois list operation
+          schema:
+            type: array
+            items:
+              properties:
+                id_loi:
+                  type: integer
+                ref_article:
+                  type: string
+                branche:
+                  type: string
+                sujet:
+                  type: string
+                lien:
+                  type: string
+                
+                
+                  
+  /lois/{id_loi}:
+    get:
+      operationId: loi.read_one
+      tags:
+        - Lois
+      summary: Read one loi from the loi list
+      description: Read one loi from the loi list
+      parameters:
+        - name: id_loi
+          in: path
+          description: id_loi
+          type: integer
+          required: true
+      responses:
+        200:
+          description: Successfully read loi from subject loi operation
+          schema:
+            type: array
+            items:
+              properties:
+                id_loi:
+                  type: integer
+                ref_article:
+                  type: string
+                branche:
+                  type: string
+                sujet:
+                  type: string
+                lien:
+                  type: string
+                
+                
+
+#TODO
+  /valeurs-controle:
+    get:
+      operationId: valeur_controle.read_all
+      tags:
+        - Valeurs de controle
+      summary: Read the entire list of valeur_controle
+      description: Read the list of valeur_controle
+      parameters:
+        - name: length
+          in: query
+          type: integer
+          description: Number of valeur_controle to get
+          required: false
+        - name: offset
+          in: query
+          type: integer
+          description: Offset from beginning of list where to start gathering valeur_controle
+          required: false
+      responses:
+        200:
+          description: Successfully read valeur_controle list operation
+          schema:
+            type: array
+            items:
+              properties:
+                id_valeur_controle:
+                  type: integer
+                id_variable_dual:
+                  type: integer
+                nom:
+                  type: string
+                type:
+                  type: string
+                
+                  
+  /valeurs-controle/{id_valeur_controle}:
+    get:
+      operationId: valeur_controle.read_one
+      tags:
+        - Valeurs de controle
+      summary: Read one valeur_controle from the valeur_controle list
+      description: Read one valeur_controle from the valeur_controle list
+      parameters:
+        - name: id_valeur_controle
+          in: path
+          description: id_valeur_controle
+          type: integer
+          required: true
+      responses:
+        200:
+          description: Successfully read valeur_controle from valeur_controle list operation
+          schema:
+            type: array
+            items:
+              properties:
+                id_valeur_controle:
+                  type: integer
+                id_variable_dual:
+                  type: integer
+                nom:
+                  type: string
+                type:
+                  type: string
+                  

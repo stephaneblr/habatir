@@ -1,0 +1,239 @@
+{
+    "type": "table",
+    "name": "OUTCOME_ENUM",
+    "database": "aloadecotp47",
+    "data": 
+[
+{
+    "id-variable": "102",
+    "id-outcome": "1",
+    "nom-outcome": "type_1\r"
+},
+{
+    "id-variable": "102",
+    "id-outcome": "2",
+    "nom-outcome": "type_2\r"
+},
+{
+    "id-variable": "102",
+    "id-outcome": "3",
+    "nom-outcome": "type_3\r"
+},
+{
+    "id-variable": "102",
+    "id-outcome": "4",
+    "nom-outcome": "type_4\r"
+},
+{
+    "id-variable": "130",
+    "id-outcome": "1",
+    "nom-outcome": "logement\r"
+},
+{
+    "id-variable": "130",
+    "id-outcome": "2",
+    "nom-outcome": "bureau\r"
+},
+{
+    "id-variable": "130",
+    "id-outcome": "3",
+    "nom-outcome": "commerce\r"
+},
+{
+    "id-variable": "130",
+    "id-outcome": "4",
+    "nom-outcome": "artisanat\r"
+},
+{
+    "id-variable": "130",
+    "id-outcome": "5",
+    "nom-outcome": "hebergement_hotelier\r"
+},
+{
+    "id-variable": "130",
+    "id-outcome": "6",
+    "nom-outcome": "industrie\r"
+},
+{
+    "id-variable": "130",
+    "id-outcome": "7",
+    "nom-outcome": "entrepot\r"
+},
+{
+    "id-variable": "130",
+    "id-outcome": "8",
+    "nom-outcome": "construction_agricole\r"
+},
+{
+    "id-variable": "130",
+    "id-outcome": "9",
+    "nom-outcome": "cinaspic\r"
+},
+{
+    "id-variable": "130",
+    "id-outcome": "10",
+    "nom-outcome": "ecole\r"
+},
+{
+    "id-variable": "145",
+    "id-outcome": "1",
+    "nom-outcome": "logement\r"
+},
+{
+    "id-variable": "145",
+    "id-outcome": "2",
+    "nom-outcome": "bureau\r"
+},
+{
+    "id-variable": "145",
+    "id-outcome": "3",
+    "nom-outcome": "commerce\r"
+},
+{
+    "id-variable": "145",
+    "id-outcome": "4",
+    "nom-outcome": "artisanat\r"
+},
+{
+    "id-variable": "145",
+    "id-outcome": "5",
+    "nom-outcome": "hebergement_hotelier\r"
+},
+{
+    "id-variable": "145",
+    "id-outcome": "6",
+    "nom-outcome": "industrie\r"
+},
+{
+    "id-variable": "145",
+    "id-outcome": "7",
+    "nom-outcome": "entrepot\r"
+},
+{
+    "id-variable": "145",
+    "id-outcome": "8",
+    "nom-outcome": "construction_agricole\r"
+},
+{
+    "id-variable": "145",
+    "id-outcome": "9",
+    "nom-outcome": "cinaspic\r"
+},
+{
+    "id-variable": "145",
+    "id-outcome": "10",
+    "nom-outcome": "ecole\r"
+},
+{
+    "id-variable": "146",
+    "id-outcome": "1",
+    "nom-outcome": "logement\r"
+},
+{
+    "id-variable": "146",
+    "id-outcome": "2",
+    "nom-outcome": "bureau\r"
+},
+{
+    "id-variable": "146",
+    "id-outcome": "3",
+    "nom-outcome": "commerce\r"
+},
+{
+    "id-variable": "146",
+    "id-outcome": "4",
+    "nom-outcome": "artisanat\r"
+},
+{
+    "id-variable": "146",
+    "id-outcome": "5",
+    "nom-outcome": "hebergement_hotelier\r"
+},
+{
+    "id-variable": "146",
+    "id-outcome": "6",
+    "nom-outcome": "industrie\r"
+},
+{
+    "id-variable": "146",
+    "id-outcome": "7",
+    "nom-outcome": "entrepot\r"
+},
+{
+    "id-variable": "146",
+    "id-outcome": "8",
+    "nom-outcome": "construction_agricole\r"
+},
+{
+    "id-variable": "146",
+    "id-outcome": "9",
+    "nom-outcome": "cinaspic\r"
+},
+{
+    "id-variable": "146",
+    "id-outcome": "10",
+    "nom-outcome": "ecole\r"
+},
+{
+    "id-variable": "171",
+    "id-outcome": "1",
+    "nom-outcome": "souterrain\r"
+},
+{
+    "id-variable": "171",
+    "id-outcome": "2",
+    "nom-outcome": "facade\r"
+},
+{
+    "id-variable": "200",
+    "id-outcome": "1",
+    "nom-outcome": "type_1\r"
+},
+{
+    "id-variable": "200",
+    "id-outcome": "2",
+    "nom-outcome": "type_2\r"
+},
+{
+    "id-variable": "200",
+    "id-outcome": "3",
+    "nom-outcome": "type_3\r"
+},
+{
+    "id-variable": "200",
+    "id-outcome": "4",
+    "nom-outcome": "type_4\r"
+},
+{
+    "id-variable": "218",
+    "id-outcome": "1",
+    "nom-outcome": "classique\r"
+},
+{
+    "id-variable": "218",
+    "id-outcome": "2",
+    "nom-outcome": "terrasse\r"
+},
+{
+    "id-variable": "218",
+    "id-outcome": "3",
+    "nom-outcome": "mansart\r"
+},
+{
+    "id-variable": "218",
+    "id-outcome": "4",
+    "nom-outcome": "plate\r"
+},
+{
+    "id-variable": "278",
+    "id-outcome": "1",
+    "nom-outcome": "sens_unique\r"
+},
+{
+    "id-variable": "278",
+    "id-outcome": "2",
+    "nom-outcome": "double_sens"
+}
+]
+
+}

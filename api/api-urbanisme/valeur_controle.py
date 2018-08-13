@@ -15,8 +15,14 @@ import json
 
 
 # Data to serve with our API before connecting SQL DB
-with open("json/valeur_controle.json","r") as fp:
-    VALEUR_CONTROLE = json.load(fp)
+with open("/Users/stephaneblondellarougery/Desktop/Urbanis/db/db-urbanisme/json.json/VALEUR_CONTROLE.json","r") as fp:
+    TEMP_VALEUR_CONTROLE = json.load(fp)
+
+VALEUR_CONTROLE ={}
+
+for item in TEMP_VALEUR_CONTROLE["data"]:
+    key = str(item["id-valeur-controle"])
+    VALEUR_CONTROLE[key]=item
     
 
 def read_all():

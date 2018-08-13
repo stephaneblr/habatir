@@ -1,0 +1,13 @@
+id-destination,id-parent-destination,nom-destination
+1,NULL,habitation
+2,NULL,hebergement_hotelier
+3,NULL,bureau
+4,NULL,commerce
+5,NULL,artisanat
+6,NULL,industrie
+7,NULL,exploitation_agricole_forestiere
+8,NULL,entrepot
+9,NULL,cinaspic
+10,9,ecole
+11,9,cinaspic_sncf
+12,9,cinaspic_grand_paris

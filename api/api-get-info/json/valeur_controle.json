@@ -1,0 +1,26 @@
+{
+    "1001": {
+        "id_valeur_controle": 1001,
+        "id_variable_dual": 106,
+        "nom": "voie_acces_terrain_AUT",
+        "type": "AUT"
+    },
+    "1002": {
+        "id_valeur_controle": 1002,
+        "id_variable_dual": 106,
+        "nom": "voie_acces_terrain_OBL",
+        "type": "OBL"
+    },
+    "1003": {
+        "id_valeur_controle": 1003,
+        "id_variable_dual": 108,
+        "nom": "voie_acces_terrain_en_impasse_AUT",
+        "type": "AUT"
+    },
+    "1004": {
+        "id_valeur_controle": 1004,
+        "id_variable_dual": 108,
+        "nom": "voie_acces_terrain_en_impasse_OBL",
+        "type": "OBL"
+    }
+}
