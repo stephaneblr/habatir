@@ -1,0 +1,10 @@
+id-zone,id-parent-zone,nom-zone
+1,NULL,UCV
+2,NULL,UR
+3,NULL,A
+4,NULL,N
+5,1,UCV1
+6,1,UCV2
+7,2,UR1
+8,2,UR2
+9,6,UCV2a
