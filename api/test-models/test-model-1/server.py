@@ -29,7 +29,7 @@ class Variable(db.Model):
     id_parent_variable = db.Column('id_parent_variable', db.Integer)
     nom_variable = db.Column('nom_variable', db.String(100))
     id_sujet = db.Column('id_sujet', db.Integer)
-    # Add : db.ForeignKey('Sujet.id_sujet')
+    # Add : db.ForeignKey('sujet.id_sujet')
     id_destination = db.Column('id_destination', db.Integer)
     est_caracteristique = db.Column('est_caracteristique', db.Boolean)
     est_mimao = db.Column('est_mimao', db.Boolean)
@@ -257,6 +257,14 @@ def destination_detail(id_destination):
     return destination_schema.jsonify(d)
 
 
+
+
+
+# @app.route("/variables/<id_variable>/sujet", methods = ["GET"])
+# def test_function(id_variable):
+#     v = Variable.query.get(id_variable)
+#     s = v.sujet
+#     return sujet_schema.jsonify(s)
 
 
 ###############################################################################
