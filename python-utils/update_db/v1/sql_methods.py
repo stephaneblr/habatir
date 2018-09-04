@@ -64,7 +64,7 @@ def init_table(table_name, arguments):
             col_type = str(arguments[1+4*n])
             col_dim = str(arguments[2+4*n])
             col_special = str(arguments[3+4*n])
-    
+            
             request += create_col(col_name, col_type, col_dim, col_special)
             data_insert+= "`"+col_name+"`, "
             
@@ -134,7 +134,11 @@ def create_table(table_name, matrix):
 
 def count_tables(db):
     # Le dernier -1 correspond au worksheet 'SQL' à ne pas prendre en compte
-    return int(str(db)[len(str(db))-2])-1 
+    try:
+        count = int(str(db)[len(str(db))-3:len(str(db))-1])-1 
+        return count
+    except:
+        return int(str(db)[len(str(db))-2])-1 
 
 def create_file_request(db):
     request = init_sql

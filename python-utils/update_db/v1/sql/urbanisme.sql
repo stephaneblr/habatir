@@ -102,8 +102,8 @@ INSERT INTO `Destination3` (`id_destination`, `id_parent_destination`, `nom_dest
 CREATE TABLE `Variable` (
   `id_variable` int(3) PRIMARY KEY,
   `id_parent_variable` int(3) DEFAULT NULL,
-  `id_sujet` int(2) !!! FK A COMPLETER MANUELEMENT !!!,
-  `id_destination` int(2) !!! FK A COMPLETER MANUELEMENT !!!,
+  `id_sujet` int(2) DEFAULT NULL,
+  `id_destination` int(2) DEFAULT NULL,
   `nom_variable` varchar(100) DEFAULT NULL,
   `est_noeud` tinyint(1) DEFAULT NULL,
   `est_caracteristique` tinyint(1) DEFAULT NULL,
@@ -317,7 +317,7 @@ INSERT INTO `Variable` (`id_variable`, `id_parent_variable`, `id_sujet`, `id_des
 
 CREATE TABLE `OutcomeEnum` (
   `id` int(3) PRIMARY KEY,
-  `id_variable` int(3) !!! FK A COMPLETER MANUELEMENT !!!,
+  `id_variable` int(3) DEFAULT NULL,
   `id_outcome` int(2) DEFAULT NULL,
   `nom_outcome` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -372,7 +372,7 @@ INSERT INTO `OutcomeEnum` (`id`, `id_variable`, `id_outcome`, `nom_outcome`) VAL
 
 CREATE TABLE `ValeurControle` (
   `id_valeur_controle` int(4) PRIMARY KEY,
-  `id_variable` int(3) !!! FK A COMPLETER MANUELEMENT !!!,
+  `id_variable` int(3) DEFAULT NULL,
   `nom_valeur_controle` varchar(150) DEFAULT NULL,
   `est_minimum` tinyint(1) DEFAULT NULL,
   `est_identite` tinyint(1) DEFAULT NULL,

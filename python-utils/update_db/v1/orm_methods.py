@@ -7,17 +7,8 @@ Created on Tue Sep  4 16:59:08 2018
 """
 
 import os
-import pygsheets
 
 indent = "    "
-
-gc = pygsheets.authorize(service_file='/Users/stephaneblondellarougery/Desktop/client_secret/client_secret_python_utils.json')
-print('Python_parser is now connected with Drive API and Sheets API.\n')    
-
-# Urbanisme
-db_urbanisme = gc.open("db_urbanisme_fk")
-sujet = db_urbanisme.worksheet('index',0)
-matrix_sujet = sujet.get_all_values()
 
 def init_class(table_name):
     text = "class "+table_name+"(db.Model):\n"+indent+"__tablename__='"+table_name+"'"
@@ -64,7 +55,11 @@ def new_class(table_name, matrix):
 
 def count_tables(db):
     # Le dernier -1 correspond au worksheet 'SQL' à ne pas prendre en compte
-    return int(str(db)[len(str(db))-2])-1 
+    try:
+        count = int(str(db)[len(str(db))-3:len(str(db))-1])-1 
+        return count
+    except:
+        return int(str(db)[len(str(db))-2])-1 
 
 def create_file_text(db):
     text = ""
