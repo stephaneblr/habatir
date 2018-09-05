@@ -23,7 +23,13 @@ from models import models_urbanisme
 from schemas import schemas_urbanisme
     
 
+# En cours ; pour avancer, il faut réussir à écrire les ressources dans un fichier séparé : 
+# PUIS : api.add_resource()
+# Pour l'instant problème de dépendance circulaire --> La définition de la ressource nécessite "model" et "schema" qui appellent eux-même "server.py".
+# Il faut donc lire du code pour trouver des API où l'instanciation de l'api et son implémentation son séparées. 
 
+# On pourra alors créer plutôt un fichier par ressource (cf "variable.py") contenant model, schema et resource. 
+    
 
 @api.route('/variables')
 class VariableRessource(Resource):
