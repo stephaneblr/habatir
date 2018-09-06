@@ -11,15 +11,15 @@
 ### Installation
 
 A la racine du projet, installer un environnement virtuel : 
-'''
+```
 virtualenv env
 source env/bin/activate
 pip install requirements.txt
-'''
+```
 
 
 ### Lancement
-'''
+```
 source env/bin/activate
 python server.py
-'''
+```
