@@ -8,7 +8,7 @@ Prend les données depuis GSheet --> Crée un fichier SQL et un modèle ORM pour
 
 - v1 : Pas encore la possibilité de préciser les FK
 
-- v2 : Toujours pas bon pour les FK, mais permet de gérer les 4 bases de données, et crée 4 fichiers différents par DB. Le code est plus attomisé. ATTENTION : Il est nécessaire d'implémenter les __bind_key__ à la main dans chaque moèle ! A modifier. 
+- v2 : Toujours pas bon pour les FK, mais permet de gérer les 4 bases de données, et crée 4 fichiers différents par DB. Le code est plus attomisé. ATTENTION : Il est nécessaire d'implémenter les __bind_key__ à la main dans chaque modèle ! A modifier. 
 
 
 #### Pistes de développement
